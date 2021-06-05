@@ -1,0 +1,119 @@
+.search-box{
+    /* padding-top: 15px; */
+    display: flex;
+    flex-direction: row;
+}
+
+.search-txt{
+    border-radius: 15px;
+    width: 200px;
+    height: 30px;
+    background-color: blueviolet;
+    color: black;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    text-align: center;
+    margin-left: auto;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black;
+    opacity: 1; /* Firefox */
+}
+
+.filter__box{
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+}
+
+.filter__txt{
+    margin-right: auto;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.category__filter{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.category__ref{
+    text-decoration: none;
+    color: black;
+    opacity: 0.9;
+
+}
+
+.inner__container{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.colours{
+    height: 17px;
+    margin-bottom: 8px;
+    margin-right: 3px;
+}
+
+.table__size{
+    border-spacing: 10px 10px;
+}
+
+.btn__size{
+    width: 50px;
+    height: 25px;
+    background-color: blueviolet;
+    margin-left: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.clothing__size__filter{
+    padding-left: 35px;
+}
+
+.clothing__size__btn{
+    width: 50px;
+    height: 25px;
+    background-color: blueviolet;
+    margin-left: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.MuiSlider-root{
+    color: black !important;
+}
+
+.pricerange__size{
+    margin-left: 15px;
+}
+
+.price__input{
+    display: flex;
+    flex-direction: row;
+}
+
+.price__form{
+    width: 100px;
+    height: 25px;
+    background-color: #C4C4C4;
+    border: 2px solid black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    outline: none;
+    text-align: center;
+}
+
+.price__form:first-child{
+    margin-left: 5px;
+}
+
+.price__form:last-child{
+    margin-left: 40px;
+}

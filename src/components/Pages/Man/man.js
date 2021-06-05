@@ -1,16 +1,15 @@
 import React, { useEffect, useState } from 'react';
-import './App.css';
-import Products from './components/products/products';
-import ProductsLoadingComponent from './components/products/productsLoading';
-import axiosInstance from './axios';
-import Topbar from './components/topBar/Topbar';
-import Navbar from './components/navbar/Nav';
-import Sidebar from './components/sidebar/Sidebar';
+import '../../../App.css';
+import Products from '../../../components/products/products';
+import ProductsLoadingComponent from '../../../components/products/productsLoading';
+import Navbar from '../../navbar/Nav';
+import Topbar from '../../topBar/Topbar';
+import Sidebar from '../../../components/sidebar/Sidebar';
 
 import { useSelector, useDispatch } from 'react-redux'
-import {fetchProducts, setMode} from './redux/actions/products'
+import {fetchMan, setMode} from '../../../redux/actions/products'
 
-function App(){
+function Man(){
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -24,8 +23,8 @@ function App(){
   const isLoaded = useSelector(({products})=>products.isLoaded);
 
   useEffect(() => {
-    dispatch(setMode(""));
-    dispatch(fetchProducts());
+    dispatch(fetchMan());
+    dispatch(setMode("man"));
 
   }, []);
 
@@ -41,4 +40,4 @@ function App(){
   );
 }
 
-export default App;
+export default Man;
